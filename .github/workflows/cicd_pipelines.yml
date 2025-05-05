@@ -22,3 +22,9 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
             echo "Berhasil konek gan"
+
+            cd /home/wahyu/CICD_DATABASE
+            echo "Berhasil Masuk ke folder gan"
+
+            docker compose up -d # Menjalankan docker compose di server
+            echo "Berhasil menjalankan docker compose di server gan"
